@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NeomorphismButton extends StatefulWidget {
-  const NeomorphismButton({
+class NeumorphismButton extends StatefulWidget {
+  const NeumorphismButton({
     super.key,
     required this.icon,
     required this.onPressed,
@@ -17,10 +17,10 @@ class NeomorphismButton extends StatefulWidget {
   final Function() onPressed;
 
   @override
-  State<NeomorphismButton> createState() => _NeomorphismButtonState();
+  State<NeumorphismButton> createState() => _NeumorphismButtonState();
 }
 
-class _NeomorphismButtonState extends State<NeomorphismButton> {
+class _NeumorphismButtonState extends State<NeumorphismButton> {
   final Color color = const HSLColor.fromAHSL(1, 210, 0.57, 0.91).toColor();
 
   bool downing = false;
@@ -38,8 +38,7 @@ class _NeomorphismButtonState extends State<NeomorphismButton> {
       onTapDown: (details) => setState(() {
         downing = true;
       }),
-      onTapCancel: () => setState(() =>
-        downing = false),
+      onTapCancel: () => setState(() => downing = false),
       onTapUp: (d) => setState(() {
         downing = false;
       }),
